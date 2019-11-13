@@ -1,0 +1,85 @@
+<!--DEV
+
+Нужно убрать пробел между @-ами:
+
+@ @include('blocks/page-header/page-header.html')
+
+-->
+
+<header class="page-header" role="banner">
+  <div class="page-header__top">
+    <div class="container">
+      <img src="img/logo.png" alt="" class="logo">
+      <div class="header-contacts">
+        <div class="header-contacts__item">
+          <div class="contact-box contact-box__phone">
+            <p class="contact-box__top"><a href="tel:+79117002003">+7&#160;(911)&#160;700-20-03</a></p>
+            <p><a href="#">Заказать звонок</a></p>
+          </div>
+        </div>
+        <div class="header-contacts__item">
+          <div class="contact-box contact-box__email">
+            <p class="contact-box__top"><a href="mailto:order@evomedia.pro?subject=feedback">order@evomedia.pro</a></p>
+          </div>
+        </div>
+        <div class="header-contacts__item">
+          <div class="contact-box contact-box__addres">
+            <p class="contact-box__top">Санкт-Петербург</p>
+            <p>Каждый день. С 10:00 до 22:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <nav class="page-header__nav drawer-navbar drawer-navbar--fixed">
+    <div class="container">
+      <ul class="main-nav drawer-menu  drawer-menu--right">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Почему мы</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Стоимость</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Этапы работы</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Отзывы</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="social">
+        <li class="social__item">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="36px">
+              <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                d="M18.000,36.000 C27.943,36.000 36.000,27.943 36.000,18.000 C36.000,8.056 27.943,-0.001 18.000,-0.001 C8.056,-0.001 -0.000,8.056 -0.000,18.000 C-0.000,27.943 8.056,36.000 18.000,36.000 ZM8.236,17.609 L25.591,10.918 C26.397,10.627 27.100,11.114 26.839,12.332 L26.841,12.331 L23.886,26.252 C23.667,27.239 23.080,27.480 22.260,27.014 L17.760,23.698 L15.589,25.789 C15.349,26.029 15.147,26.231 14.682,26.231 L15.001,21.652 L23.341,14.117 C23.704,13.798 23.260,13.618 22.782,13.936 L12.475,20.425 L8.032,19.038 C7.068,18.733 7.047,18.074 8.236,17.609 L8.236,17.609 Z" />
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="36px">
+              <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                d="M18.000,36.000 C8.060,36.000 -0.000,27.939 -0.000,18.000 C-0.000,8.060 8.060,-0.001 18.000,-0.001 C27.940,-0.001 36.000,8.060 36.000,18.000 C36.000,27.939 27.940,36.000 18.000,36.000 ZM26.002,10.090 C23.968,8.055 21.263,6.933 18.381,6.932 C12.443,6.932 7.610,11.762 7.608,17.702 C7.607,19.599 8.103,21.452 9.046,23.085 L7.518,28.666 L13.229,27.168 C14.802,28.026 16.574,28.479 18.377,28.479 L18.381,28.479 C24.319,28.479 29.152,23.648 29.155,17.710 C29.156,14.832 28.036,12.126 26.002,10.090 ZM18.381,26.660 L18.378,26.660 C16.771,26.660 15.195,26.229 13.820,25.413 L13.493,25.219 L10.104,26.108 L11.009,22.804 L10.796,22.466 C9.900,21.040 9.426,19.393 9.427,17.702 C9.429,12.767 13.446,8.751 18.385,8.751 C20.776,8.752 23.025,9.685 24.715,11.377 C26.406,13.069 27.336,15.317 27.336,17.709 C27.333,22.645 23.316,26.660 18.381,26.660 ZM23.809,20.271 C23.741,20.158 23.562,20.091 23.293,19.956 C23.024,19.822 21.700,19.170 21.453,19.081 C21.207,18.991 21.027,18.946 20.848,19.215 C20.669,19.485 20.152,20.091 19.996,20.271 C19.838,20.450 19.681,20.473 19.413,20.338 C19.143,20.204 18.276,19.919 17.248,19.002 C16.448,18.289 15.907,17.408 15.750,17.139 C15.593,16.869 15.749,16.737 15.868,16.589 C16.153,16.235 16.451,15.849 16.541,15.668 C16.631,15.488 16.586,15.331 16.519,15.197 C16.451,15.062 15.913,13.738 15.689,13.199 C15.470,12.675 15.248,12.746 15.083,12.737 C14.926,12.729 14.747,12.728 14.567,12.728 C14.388,12.728 14.096,12.795 13.849,13.064 C13.603,13.333 12.907,13.985 12.907,15.310 C12.907,16.634 13.872,17.914 14.006,18.093 C14.141,18.273 15.905,20.991 18.605,22.157 C19.247,22.434 19.748,22.599 20.140,22.723 C20.784,22.928 21.371,22.899 21.835,22.830 C22.352,22.752 23.427,22.179 23.652,21.551 C23.876,20.922 23.876,20.382 23.809,20.271 Z" />
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="36px">
+              <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                d="M18.000,36.000 C8.059,36.000 -0.000,27.940 -0.000,18.000 C-0.000,8.059 8.059,-0.001 18.000,-0.001 C27.941,-0.001 36.000,8.059 36.000,18.000 C36.000,27.940 27.941,36.000 18.000,36.000 Z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+    </div>
+  </nav> -->
+</header>
