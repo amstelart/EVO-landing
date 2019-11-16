@@ -22,6 +22,8 @@
     "*.scss": "stylelint --syntax=scss"
   },
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "autoprefixer": "^7.1.1",
     "browser-sync": "^2.18.8",
     "const": "^1.0.0",
@@ -63,6 +65,7 @@
     "postcss-import": "^11.0.0",
     "postcss-inline-svg": "^3.0.0",
     "postcss-object-fit-images": "^1.1.2",
+    "slick-slider": "^1.8.2",
     "stylelint": "^8.2.0",
     "vinyl-buffer": "^1.0.0",
     "yaspeller": "^4.0.0"

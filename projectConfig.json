@@ -41,7 +41,6 @@
     "table": [],
     "table-responsive": [],
     "table-mobile-scroll": [],
-    "owl-carousel": [],
     "swipe": [],
     "pagination": [],
     "breadcrumbs": [],
@@ -64,8 +63,13 @@
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
+    "./node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
+    "./node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
+    "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
+    "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
     "../../node_modules/jquery-drawer/dist/css/drawer.min.css",
-    "../../node_modules/owl.carousel/dist/assets/owl.carousel.css"
+    "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css",
+    "./node_modules/slick-slider/slick/slick.scss"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"
@@ -80,9 +84,9 @@
     "./node_modules/jquery-drawer/dist/js/drawer.min.js",
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/ismobilejs/isMobile.min.js",
-    "./node_modules/owl.carousel/dist/owl.carousel.js",
-    "./node_modules/swipejs/build/swipe.min.js",
-    "./node_modules/object-fit-images/dist/ofi.js"
+    "./node_modules/slick-slider/slick/slick.min.js",
+    "./node_modules/object-fit-images/dist/ofi.js",
+    "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"

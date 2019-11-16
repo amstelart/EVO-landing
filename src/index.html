@@ -19,7 +19,11 @@
       <div class="drawer-navbar" role="banner">
         <div class="drawer-container container">
           <div class="drawer-navbar-header">
-            <a class="drawer-brand" href="#"><img src="img/logo.png" alt=""></a>
+            <a class="drawer-brand" href="#"><img src="img/logo-2.png" alt=""></a>
+            <div class="mobile-contacts">
+              <a class="mobile-contacts__item" href="tel:+79117002003"><i class="fas fa-mobile"></i></a>
+              <a class="mobile-contacts__item" href="mailto:order@evomedia.pro?subject=feedback"><i class="fas fa-envelope"></i></a>
+            </div>
             <button type="button" class="drawer-toggle drawer-hamburger">
               <span class="sr-only">toggle navigation</span>
               <span class="drawer-hamburger-icon"></span>
@@ -58,8 +62,12 @@
                 </a>
               </li>
             </ul>
+            <div class="mobile-menu__footer">
+              <a class="phone" href="tel:+7(911)700-20-03">+7 (911)700-20-03</a>
+              <a href="mailto:order@evomedia.pro">order@evomedia.pro</a>
+              <a href="#">Санкт-Петербург</a>
+            </div>
           </nav>
-
         </div>
       </div>
 
@@ -80,7 +88,7 @@
               </label>
               <label class="field-text">
                 <span class="field-text__input-wrap">
-                  <input class="field-text__input" type="text" placeholder="Ваш телефон" id="" name="">
+                  <input class="field-text__input phone-mask" type="text" placeholder="Ваш телефон" id="" name="">
                 </span>
               </label>
               <button class="btn" type='submit'>Отправить</button>
@@ -231,7 +239,7 @@
                     </label>
                     <label class="field-text">
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="Ваш телефон" id="" name="">
+                        <input class="field-text__input phone-mask" type="text" placeholder="Ваш телефон" id="" name="">
                       </span>
                     </label>
                     <button class="btn btn--pink" type='submit'>Заказать по акции</button>
@@ -276,7 +284,7 @@
                 </label>
                 <label class="field-text">
                   <span class="field-text__input-wrap">
-                    <input class="field-text__input" type="text" placeholder="Ваш телефон" id="" name="">
+                    <input class="field-text__input phone-mask" type="text" placeholder="Ваш телефон" id="" name="">
                   </span>
                 </label>
                 <button class="btn btn--pink" type='submit'>Отправить</button>
@@ -289,7 +297,15 @@
         <section class="section section--slider">
           <div class="container">
             <div class="slider">
-              <img src="img/slider-img.jpg" alt="">
+              <a href="img/demo-doc.png" data-fancybox>
+                <img src="img/slider-img.jpg" alt="">
+              </a>
+              <a href="img/demo-doc.png" data-fancybox>
+                <img src="img/slider-img.jpg" alt="">
+              </a>
+              <a href="img/demo-doc.png" data-fancybox>
+                <img src="img/slider-img.jpg" alt="">
+              </a>
             </div>
           </div>
         </section>
@@ -689,7 +705,7 @@
                 </label>
                 <label class="field-text">
                   <span class="field-text__input-wrap">
-                    <input class="field-text__input" type="text" placeholder="Ваш телефон" id="" name="">
+                    <input class="field-text__input phone-mask" type="text" placeholder="Ваш телефон" id="" name="">
                   </span>
                 </label>
                 <button class="btn btn--pink" type='submit'>Отправить</button>
@@ -707,55 +723,59 @@
           <div class="portfolio">
             <div class="portfolio-case">
               <div class="portfolio-case__img" style="background-image: url('img/portfolio-case-img-01.jpg');">
-                <div class="portfolio-case__caption">
-                  <div class="portfolio-case__num">Кейс 1</div>
-                  <h3 class="portfolio-case__title">Шкуры зебры</h3>
-                  <ul class="portfolio-case__details">
-                    <li><span>Сфера:</span> Торговля</li>
-                    <li><span>Что было:</span> 25 клиентов в месяц</li>
-                    <li><span>Что сделали:</span> Настроили контекстную рекламу</li>
-                    <li><span>Что стало:</span> Заявки увеличились на 25%</li>
-                  </ul>
-                </div>
+              </div>
+              <div class="portfolio-case__caption">
+                <div class="portfolio-case__num">Кейс 1</div>
+                <h3 class="portfolio-case__title">Шкуры зебры</h3>
+                <ul class="portfolio-case__details">
+                  <li><span>Сфера:</span> Торговля</li>
+                  <li><span>Что было:</span> 25 клиентов в месяц</li>
+                  <li><span>Что сделали:</span> Настроили контекстную рекламу</li>
+                  <li><span>Что стало:</span> Заявки увеличились на 25%</li>
+                </ul>
+                <a href="#" class="btn portfolio-case__btn">Посмотреть</a>
               </div>
             </div>
             <div class="portfolio-case">
               <div class="portfolio-case__img" style="background-image: url('img/portfolio-case-img-02.jpg');">
-                <div class="portfolio-case__caption">
-                  <div class="portfolio-case__num">Кейс 2</div>
-                  <h3 class="portfolio-case__title">Юридическая помощь</h3>
-                  <ul class="portfolio-case__details">
-                    <li><span>Тематика:</span> Банковский сектор</li>
-                    <li><span>Город:</span> Санкт-Петербург</li>
-                    <li><span>Период продвижения:</span> 12 месяцев</li>
-                  </ul>
-                </div>
+              </div>
+              <div class="portfolio-case__caption">
+                <div class="portfolio-case__num">Кейс 2</div>
+                <h3 class="portfolio-case__title">Юридическая помощь</h3>
+                <ul class="portfolio-case__details">
+                  <li><span>Тематика:</span> Банковский сектор</li>
+                  <li><span>Город:</span> Санкт-Петербург</li>
+                  <li><span>Период продвижения:</span> 12 месяцев</li>
+                </ul>
+                <a href="#" class="btn portfolio-case__btn">Посмотреть</a>
               </div>
             </div>
             <div class="portfolio-case">
               <div class="portfolio-case__img" style="background-image: url('img/portfolio-case-img-03.jpg');">
-                <div class="portfolio-case__caption">
-                  <div class="portfolio-case__num">Кейс 3</div>
-                  <h3 class="portfolio-case__title">Заливка фундамента</h3>
-                  <ul class="portfolio-case__details">
-                    <li><span>Тематика:</span> Строительство</li>
-                    <li><span>Город:</span> Санкт-Петербург</li>
-                    <li><span>Период продвижения:</span> 12 месяцев</li>
-                  </ul>
-                </div>
+              </div>
+              <div class="portfolio-case__caption">
+                <div class="portfolio-case__num">Кейс 3</div>
+                <h3 class="portfolio-case__title">Заливка фундамента</h3>
+                <ul class="portfolio-case__details">
+                  <li><span>Тематика:</span> Строительство</li>
+                  <li><span>Город:</span> Санкт-Петербург</li>
+                  <li><span>Период продвижения:</span> 12 месяцев</li>
+                </ul>
+                <a href="#" class="btn portfolio-case__btn">Посмотреть</a>
               </div>
             </div>
             <div class="portfolio-case">
               <div class="portfolio-case__img" style="background-image: url('img/portfolio-case-img-04.jpg');">
-                <div class="portfolio-case__caption">
-                  <div class="portfolio-case__num">Кейс 4</div>
-                  <h3 class="portfolio-case__title">Продажа бань</h3>
-                  <ul class="portfolio-case__details">
-                    <li><span>Тематика:</span> Торговля</li>
-                    <li><span>Город:</span> Санкт-Петербург</li>
-                    <li><span>Период продвижения:</span> 12 месяцев</li>
-                  </ul>
-                </div>
+              </div>
+              <div class="portfolio-case__caption">
+                <div class="portfolio-case__num">Кейс 4</div>
+                <h3 class="portfolio-case__title">Продажа бань</h3>
+                <ul class="portfolio-case__details">
+                  <li><span>Тематика:</span> Торговля</li>
+                  <li><span>Город:</span> Санкт-Петербург</li>
+                  <li><span>Период продвижения:</span> 12 месяцев</li>
+                </ul>
+                <a href="#" class="btn portfolio-case__btn">Посмотреть</a>
               </div>
             </div>
           </div>
@@ -791,8 +811,119 @@
               </div>
             </div>
           </div>
+          <div class="vertical-slider-wrapper">
+            <div class="vertical-slider wow fadeIn" data-wow-delay=".1s">
+              <div class="vertical-slider-item wow fadeIn">
+                <div class="slider-image d-none d-sm-block" style="background-image: url(img/stages-slide-01.jpg);"></div>
+                <div class="slider-description wow fadeIn" data-wow-delay="0.2s">
+                  <div class="slider-title">Оставляете заявку</div>
+                  <div class="slider-text">
+                    <ul>
+                      <li>Оставляете заявку или звоните нам</li>
+                      <li>Мы делаем бесплатный расчёт бюджета на контекстную рекламу</li>
+                      <li>Оплачиваете счёт на Лендинг и контекстную рекламу</li>
+                      <li>Заполняете простой бриф</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="vertical-slider-item wow fadeIn">
+                <div class="slider-image d-none d-sm-block" style="background-image: url(img/stages-slide-01.jpg);"></div>
+                <div class="slider-description wow fadeIn" data-wow-delay="0.2s">
+                  <div class="slider-title">Анализируем</div>
+                  <div class="slider-text">
+                    <ul>
+                        <li>Ваш продукт или услугу</li>
+                        <li>Ключевые фразы вашей ниши</li>
+                        <li>Основных конкурентов вашего бизнеса</li>
+                        <li>Сайты ваших конкурентов</li>
+                        <li>Рекламные кампании конкурентов</li>
+                        <li>Ключевые фразы рекламы конкурентов</li>
+                        <li>Тексты и заголовки объявлений конкурентов</li>
+                        <li>Целевую аудиторию вашего бизнеса</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="vertical-slider-item wow fadeIn">
+                <div class="slider-image d-none d-sm-block" style="background-image: url(img/stages-slide-01.jpg);"></div>
+                <div class="slider-description wow fadeIn" data-wow-delay="0.2s">
+                  <div class="slider-title">Создаем</div>
+                  <div class="slider-text">
+                    <ul>
+                        <li>Подбираем вам домен - дарим</li>
+                        <li>Подключаем к хостингу на 3 месяца бесплатно</li>
+                        <li>Составляем продающую структуру лендинга</li>
+                        <li>Пишем вам уникальные тексты</li>
+                        <li>Создаем индивидуальный стиль лендинга</li>
+                        <li>Делаем адаптивную верстку под все разрешения экрана</li>
+                        <li>Собираем семантическое ядро для контекстной рекламы</li>
+                        <li>Рассчитываем среднюю цену клика </li>
+                        <li>Создаем кликабельные рекламные объявления</li>
+                        <li>Создаем несколько рекламных кампаний</li>
+                        <li>Настраиваем системы аналитики</li>
+                        <li>Полностью отдаем вам лендинг в пользование (CMS MODX) </li>
+                        <li>Обучение системы управления сайтом MODX</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="vertical-slider-item wow fadeIn">
+                <div class="slider-image d-none d-sm-block" style="background-image: url(img/stages-slide-01.jpg);"></div>
+                <div class="slider-description wow fadeIn" data-wow-delay="0.2s">
+                  <div class="slider-title">Запускаем лендинг</div>
+                  <div class="slider-text">
+                    В процессе:
+                    <ul>
+                      <li>Собираем статистику и анализируем рекламу</li>
+                      <li>Убираем нерелевантные поисковые запросы </li>
+                      <li>Вносим изменения для увеличения CTR и уменьшения цены клика</li>
+                      <li>Отправляем отчет за 30 дней по рекламе</li>
+                      <li>По желанию клиента расширить семантику рекламной кампании</li>
+                    </ul>
+                    <p><b>ВЫ получаете</b> лендинг и поток обращений потенциальных клиентов после запуска</p>
+                    <p>В дальнейшем стоимость  ведения эффективной контекстной рекламы будет по сниженной цене -  всего от <span>4 999 ₽</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <!-- ./stage -->
+
+        <!-- reviews -->
+        <section id="reviews" class="scroll-section section section--reviews">
+          <div class="container">
+            <div class="section__header">
+              <h2 class="fw-extra-bold">Отзывы</h2>
+            </div>
+            <div class="reviews-carousel-wrap">
+              <div class="reviews-carousel">
+                <div class="reviews-item">
+                  <img src="img/reviews-photo-01.png" width="50px" height="50px" alt="" class="reviews-item__photo">
+                  <h5 class="reviews-item__title">Леонид Макаров</h5>
+                  <p>Вы даже не представляете, насколько Вы хороши — в сравнении с другими фирмачками, которые не в состоянии проконсультировать толком , так ещё и всячески съезжают с разговора с клиентом…! Я оценил по достоинству Ваш подход к делу. Я надеюсь на крайне долгое и продуктивное совместное сотрудничество! Выражаю искреннюю благодарность Вашему коллективу!!! Как раз таки Вашу работу я охарактеризую как: качественный и серьёзный подход! Хорошего Вам настроения и дня!</p>
+                </div>
+                <div class="reviews-item">
+                  <img src="img/reviews-photo-02.png" width="50px" height="50px" alt="" class="reviews-item__photo">
+                  <h5 class="reviews-item__title">Дмитрий Гончар</h5>
+                  <p>Я очень рад, что обратился именно в вашу компанию, когда понадобился сайт. Цена сайта смешная, а помощь оказываете неимоверную. Буквально по каждой мелочи, все желания исполняете, я очень доволен!! Процветания вам, ребята!</p>
+                </div>
+                <div class="reviews-item">
+                  <img src="img/reviews-photo-03.png" width="50px" height="50px" alt="" class="reviews-item__photo">
+                  <h5 class="reviews-item__title">Андрей Закриев</h5>
+                  <p>Хочу выразить благодарность вашему сотруднику Егору , за индивидуальный подход к заказчику, помощь в решении не стандартной ситуации, умение услышать, а не выслушать, а это главное, а так же за отличные профессиональные навыки,    Я считаю, что таких сотрудников как Дмитрий необходимо поощрять и ценить.!</p>
+                </div>
+                <div class="reviews-item">
+                  <img src="img/reviews-photo-04.png" width="50px" height="50px" alt="" class="reviews-item__photo">
+                  <h5 class="reviews-item__title">Валентин Богомазов</h5>
+                  <p>Выражаю ОГРОМНУЮ благодарность сотрудникам EVOMedia! Обратился в компанию для создания эксклюзивного сайта,  очень много проделано работы! Вы молодцы, очень ответственно подходите к своей работе. Ни один мой вопрос не остался без ответа. Высший класс!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ./reviews -->
 
         <!-- faq -->
         <section class="section section--faq">
@@ -857,7 +988,7 @@
               <form class="feedback__form">
                 <label class="field-text">
                   <span class="field-text__input-wrap">
-                    <input class="field-text__input" type="text" placeholder="Ваш телефон" id="" name="">
+                    <input class="field-text__input phone-mask" type="text" placeholder="Ваш телефон" id="" name="">
                   </span>
                 </label>
                 <button class="btn btn--pink" type='submit'>Задать вопрос</button>

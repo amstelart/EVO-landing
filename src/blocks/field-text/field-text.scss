@@ -34,7 +34,7 @@ $border-radius:               33px;
     vertical-align: middle;
     width: 100%;
     // height: 2.125em;
-    padding: $field-padding-vertical  1.85em;
+    padding: 16px 24px;
     margin: 0;
     line-height: $line-height;
     font-size: 1em;
@@ -43,6 +43,10 @@ $border-radius:               33px;
     border: 1px solid $border-color;
     border-radius: $border-radius;
     appearance: textfield;
+
+    @media (min-width: $screen-lg) {
+      padding: $field-padding-vertical  1.85em;
+    }
 
     &:focus {
       @include field-focus;
